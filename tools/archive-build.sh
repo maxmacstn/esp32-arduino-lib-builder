@@ -14,31 +14,31 @@ mkdir -p dist && rm -rf "$archive_path" "$build_archive_path"
 cd out
 echo "Creating PlatformIO Tasmota framework-arduinoespressif32"
 cp -rf ../components/arduino arduino-esp32
-rm -rf arduino-esp32/docs
-rm -rf arduino-esp32/tests
-rm -rf arduino-esp32/libraries/RainMaker
-rm -rf arduino-esp32/libraries/Insights
-rm -rf arduino-esp32/libraries/SPIFFS
-rm -rf arduino-esp32/libraries/BLE
-rm -rf arduino-esp32/libraries/SimpleBLE
-rm -rf arduino-esp32/libraries/WiFiProv
-rm -rf arduino-esp32/libraries/WiFiClientSecure
-rm -rf arduino-esp32/libraries/ESP32
-rm -rf arduino-esp32/package
-rm -rf arduino-esp32/tools/sdk
-rm -rf arduino-esp32/tools/get.py
-rm -rf arduino-esp32/tools/get.exe
-rm -rf arduino-esp32/tools/esptool.py
-rm -rf arduino-esp32/tools/ide-debug
-rm -rf arduino-esp32/tools/gen_esp32part.py
-rm -rf arduino-esp32/tools/gen_insights_package.py
-rm -rf arduino-esp32/tools/gen_insights_package.exe
-rm -rf arduino-esp32/tools/platformio-build-*.py
-rm -rf arduino-esp32/platform.txt
-rm -rf arduino-esp32/programmers.txt
-rm -rf arduino-esp32/boards.txt
-rm -rf arduino-esp32/package.json
-rm -rf arduino-esp32/*.md
+# rm -rf arduino-esp32/docs
+# rm -rf arduino-esp32/tests
+# rm -rf arduino-esp32/libraries/RainMaker
+# rm -rf arduino-esp32/libraries/Insights
+# rm -rf arduino-esp32/libraries/SPIFFS
+# rm -rf arduino-esp32/libraries/BLE
+# rm -rf arduino-esp32/libraries/SimpleBLE
+# rm -rf arduino-esp32/libraries/WiFiProv
+# rm -rf arduino-esp32/libraries/WiFiClientSecure
+# rm -rf arduino-esp32/libraries/ESP32
+# rm -rf arduino-esp32/package
+# rm -rf arduino-esp32/tools/sdk
+# rm -rf arduino-esp32/tools/get.py
+# rm -rf arduino-esp32/tools/get.exe
+# rm -rf arduino-esp32/tools/esptool.py
+# rm -rf arduino-esp32/tools/ide-debug
+# rm -rf arduino-esp32/tools/gen_esp32part.py
+# rm -rf arduino-esp32/tools/gen_insights_package.py
+# rm -rf arduino-esp32/tools/gen_insights_package.exe
+# rm -rf arduino-esp32/tools/platformio-build-*.py
+# rm -rf arduino-esp32/platform.txt
+# rm -rf arduino-esp32/programmers.txt
+# rm -rf arduino-esp32/boards.txt
+# rm -rf arduino-esp32/package.json
+# rm -rf arduino-esp32/*.md
 mv -f tools/esp32-arduino-libs/platformio-build-*.py arduino-esp32/tools/
 cp -f tools/gen_esp32part.py arduino-esp32/tools/
 cp -Rf tools/esp32-arduino-libs/ arduino-esp32/tools/sdk
